@@ -22,7 +22,7 @@ header > .row{
     margin: auto;
 }
 
-img{
+header #logo{
     position: absolute;
     top: 32px;
 }
