@@ -5,6 +5,8 @@
 body{
     margin: 0;
     padding: 0;
+    direction: rtl;
+    text-align: right;
 }
 
 header{
@@ -13,4 +15,14 @@ header{
     height: 106px;
     position: fixed;
     top: 0;
+}
+
+header > .row{
+    width: 900px;
+    margin: auto;
+}
+
+img{
+    position: absolute;
+    top: 32px;
 }
