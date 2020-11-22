@@ -33,6 +33,11 @@ header a, footer a{
     text-decoration: none;
     font-weight: bold;
 }
+header a:hover, footer a:hover{
+    color: #005b9f;
+    text-decoration: underline;
+    /* text-decoration-color: #005b9f; */
+}
 
 a#site-lang{
     font-size: 12px;
@@ -95,4 +100,32 @@ nav ul li.separator{
     width: 4px;
     height: 18px;
     margin-top: 4px;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown > .dropdown-contant{
+    position: absolute;
+    right: 0;
+    top: 36px;
+    display: none;
+    background: linear-gradient(360deg, #909090 85%, #bdbbbb);
+    width: max-content;
+}
+.dropdown > .dropdown-contant a{
+    display: block;
+    width: 100%;
+    padding: 4px 5px;
+    border-bottom: solid 1px #a9a9a9;
+}
+.dropdown > .dropdown-contant a:last-of-type{
+    border-bottom: none;
+}
+.dropdown > .dropdown-contant a:hover{
+    background-color: #bcbcbc;
+}
+.dropdown:hover > .dropdown-contant{
+    display: block;
 }
