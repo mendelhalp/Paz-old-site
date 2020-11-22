@@ -39,7 +39,6 @@ header a, footer a{
 header a:hover, footer a:hover{
     color: #005b9f;
     text-decoration: underline;
-    /* text-decoration-color: #005b9f; */
 }
 
 a#site-lang{
@@ -130,4 +129,57 @@ nav ul li.separator{
 }
 .dropdown:hover > .dropdown-contant{
     display: block;
+}
+body > .main-section{
+    width: 900px;
+    margin: 136px auto 0 auto;
+    flex-wrap: nowrap;
+}
+.main-section > .column{
+    width:293px;
+    height:355px;
+    border-bottom-right-radius: 20px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+}
+.main-section > .column:first-of-type{
+    background-image: url(images/1908364606615453350.jpg);
+}
+.main-section > .column:nth-of-type(2){
+    background-image: url(images/Picture-046410251500.jpg);
+}
+.main-section > .column:last-of-type{
+    background-image: url(images/291_354410564000.jpg);
+}
+.main-section > .column > .text-holder{
+    width: 248px;
+    height: 97px;
+    padding: 10px;
+    color: white;
+    margin: 0 6px 7px 0;
+    background-color: rgba(125,125,125,0.85);
+    border-bottom-right-radius: 20px;
+}
+.main-section > .column > .text-holder h4{
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0 0 4px 0;
+}
+.main-section > .column > .text-holder article{
+    font-size: 13px;
+    line-height: 13px;
+}
+.main-section > .column > .text-holder a{
+    font-size: 13px;
+    color: white;
+    float: left;
+}
+.main-section > .column > .text-holder a img{
+    margin-right: 4px;
+}
+.main-section > .column > .text-holder a:hover{
+    color: #005b9f;
 }
