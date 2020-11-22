@@ -21,6 +21,9 @@ header{
 header > .row{
     width: 900px;
     margin: auto;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header #logo{
@@ -57,15 +60,14 @@ header input{
 .row{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
 }
 header > .row > .column:last-of-type{
     margin-top: 6px;
     margin-left: 3px;
 }
-header > .row{
-    height: 50%;
+header .column > .row{
+    justify-content: space-between;
+    align-items: center;
 }
 header > .row:last-of-type{
     justify-content: flex-end;
