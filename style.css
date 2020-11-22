@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: linear-gradient(180deg, #909090 85%, #bdbbbb);
+    width: 100%;
+    height: 106px;
+    position: fixed;
+    top: 0;
+}
