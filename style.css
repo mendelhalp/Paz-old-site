@@ -183,3 +183,12 @@ body > .main-section{
 .main-section > .column > .text-holder a:hover{
     color: #005b9f;
 }
+#frst-2-lnk-icn, #scnd-2-lnk-icn, #lst-2-lnk-icn{
+    display: none;
+}
+a:hover > #frst-lnk-icn, a:hover > #scnd-lnk-icn, a:hover > #lst-lnk-icn{
+    display: none;
+}
+a:hover > #frst-2-lnk-icn, a:hover > #scnd-2-lnk-icn, a:hover > #lst-2-lnk-icn{
+    display: initial;
+}
