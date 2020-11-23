@@ -1,7 +1,6 @@
 *{
     box-sizing: border-box;
 }
-
 body{
     margin: 0;
     padding: 0;
@@ -10,14 +9,57 @@ body{
     font-family: arial;
 }
 
-header{
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dropdown{
+    position: relative;
+}
+.dropdown > .dropdown-contant{
+    position: absolute;
+    right: 0;
+    top: 36px;
+    display: none;
+    background: linear-gradient(360deg, #909090 85%, #bdbbbb);
+    width: max-content;
+}
+.dropdown > .dropdown-contant a{
+    display: block;
+    width: 100%;
+    padding: 4px 5px;
+    border-bottom: solid 1px #a9a9a9;
+}
+.dropdown > .dropdown-contant a:last-of-type{
+    border-bottom: none;
+}
+.dropdown > .dropdown-contant a:hover{
+    background-color: #bcbcbc;
+}
+.dropdown:hover > .dropdown-contant{
+    display: block;
+}
+
+a > .a-dsply{
+    display: none;
+}
+a:hover > .a-dspr{
+    display: none;
+}
+a:hover >  .a-dsply{
+    display: initial;
+}
+
+
+body > header{
     background: linear-gradient(180deg, #909090 85%, #bdbbbb);
     width: 100%;
     height: 106px;
     position: absolute;
     top: 0;
 }
-
 header > .row{
     width: 900px;
     margin: auto;
@@ -25,12 +67,10 @@ header > .row{
     justify-content: space-between;
     align-items: center;
 }
-
 header #logo{
     position: absolute;
     top: 32px;
 }
-
 header a, footer a{
     color: white;
     text-decoration: none;
@@ -40,11 +80,9 @@ header a:hover, footer a:hover{
     color: #005b9f;
     text-decoration: underline;
 }
-
-a#site-lang{
+header a#site-lang{
     font-size: 12px;
 }
-
 header input{
     border-top-right-radius: 6px;
     border: none;
@@ -54,11 +92,6 @@ header input{
     margin: auto 16px auto 1px;
     font-size: 12px;
     padding: 1px 5px 1px 1px;
-}
-
-.row{
-    display: flex;
-    flex-wrap: wrap;
 }
 header > .row > .column:last-of-type{
     margin-top: 6px;
@@ -86,7 +119,6 @@ header nav ul, footer nav ul{
     padding: 0 8px 0 4px;
     margin-block-end:0;
 }
-
 header nav ul a{
     font-size: 15px;
     font-weight: bold;
@@ -95,41 +127,14 @@ header nav ul a{
 header nav ul li img{
     margin-top: 3px;
 }
-
-nav ul li.separator{
+header nav ul li.separator{
     background: linear-gradient(270deg, #909090 50%, #bdbbbb);
     width: 4px;
     height: 18px;
     margin-top: 4px;
 }
 
-.dropdown{
-    position: relative;
-}
 
-.dropdown > .dropdown-contant{
-    position: absolute;
-    right: 0;
-    top: 36px;
-    display: none;
-    background: linear-gradient(360deg, #909090 85%, #bdbbbb);
-    width: max-content;
-}
-.dropdown > .dropdown-contant a{
-    display: block;
-    width: 100%;
-    padding: 4px 5px;
-    border-bottom: solid 1px #a9a9a9;
-}
-.dropdown > .dropdown-contant a:last-of-type{
-    border-bottom: none;
-}
-.dropdown > .dropdown-contant a:hover{
-    background-color: #bcbcbc;
-}
-.dropdown:hover > .dropdown-contant{
-    display: block;
-}
 body > .main-section{
     width: 900px;
     margin: 136px auto 0 auto;
@@ -183,15 +188,8 @@ body > .main-section{
 .main-section > .column > .text-holder a:hover{
     color: #005b9f;
 }
-a > .a-dsply{
-    display: none;
-}
-a:hover > .a-dspr{
-    display: none;
-}
-a:hover >  .a-dsply{
-    display: initial;
-}
+
+
 body > .secondery-section{
     width: 900px;
     margin: 0 auto 70px auto;
@@ -209,7 +207,6 @@ body > .secondery-section{
 .secondery-section a img{
     margin: 0 4px 0 0;
 }
-
 .secondery-section a:hover{
     color: #005b9f;
 }
@@ -248,18 +245,18 @@ body > .secondery-section{
     flex-direction: column;
     justify-content: space-evenly;
 }
-
 .secondery-section > .column:last-of-type .links img{
     float: left;
     margin-top: 4px;
 }
-
 .secondery-section .map-links{
     margin: 0 3px;
     display: flex;
     justify-content: space-between;
 }
-footer{
+
+
+body > footer{
     background: linear-gradient(0deg, #909090 60%, #bdbbbb);
     width: 100%;
     height: 38px;
@@ -283,7 +280,7 @@ footer > nav li > a,footer > nav li{
     /* margin-left: 1px; */
     padding: 0;
 }
-.red > a{
+footer .red > a{
     color: red;
     text-shadow:0.2px 0.2px rgb(75, 75, 75);
 }
