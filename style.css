@@ -194,7 +194,7 @@ a:hover >  .a-dsply{
 }
 body > .secondery-section{
     width: 900px;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 70px auto;
     color: #575757;
 }
 .secondery-section .links{
@@ -263,8 +263,8 @@ footer{
     background: linear-gradient(0deg, #909090 60%, #bdbbbb);
     width: 100%;
     height: 38px;
-    position: fix;
-    bottom: 0;
+    position: fixed;
+    bottom: 0vh;
 }
 footer > nav{
     width: 900px;
