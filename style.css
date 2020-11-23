@@ -301,10 +301,45 @@ body .contact-section{
     margin-left: 15px;
     height: 426px;
 }
+.contact-section menu{
+    border-top: solid 1px #dedede;
+    width: 122px;
+    height: 37px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: linear-gradient(0deg,#bdbbbb -70%, #fff);
+}
+.contact-section menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.contact-section menu ul li::before{
+    content: "";
+    display: inline-block;
+    width: 0; 
+    height: 0; 
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent; 
+    border-right:7px solid var(--blue);
+    margin:0 0 0 5px ;
+}
+.contact-section menu ul a{
+    color: #5c5c5c;
+    font-size: 13px;
+    text-decoration: none;
+}
+.contact-section menu > ul > li > a:hover{
+    color:var(--blue);
+    text-decoration: underline;
+}
 .contact-section .breadcrumb ul{
     padding: 0;
     list-style: none;
-  }
+}
 .contact-section .breadcrumb ul li{
     display: inline;
     font-size: 12px;  
@@ -318,11 +353,11 @@ body .contact-section{
     color: #5c5c5c;
     text-decoration: none;
 }
-  .contact-section .breadcrumb ul li a:hover {
+.contact-section .breadcrumb ul li a:hover {
     color: var(--blue);
     text-decoration: underline;
 }
-.contact-section .column:last-of-type >div{
+.contact-section .column:last-of-type > div{
     width: 292px;
     height: 175px;
     border: 2px solid rgba(233,233,233,0.8);
