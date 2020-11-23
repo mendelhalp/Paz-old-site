@@ -83,7 +83,7 @@ header a:hover, footer a:hover{
 header a#site-lang{
     font-size: 12px;
 }
-header input{
+header input[type="text"]{
     border-top-right-radius: 6px;
     border: none;
     width: 132px;
@@ -92,6 +92,9 @@ header input{
     margin: auto 16px auto 1px;
     font-size: 12px;
     padding: 1px 5px 1px 1px;
+}
+header #search-button:focus{
+    outline: solid 1px red;
 }
 header > .row > .column:last-of-type{
     margin-top: 6px;
