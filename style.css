@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
 }
+:root{
+    --blue: #005b9f;
+}
 body{
     margin: 0;
     padding: 0;
@@ -14,6 +17,7 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
+
 
 .dropdown{
     position: relative;
@@ -77,7 +81,7 @@ header a, footer a{
     font-weight: bold;
 }
 header a:hover, footer a:hover{
-    color: #005b9f;
+    color: var(--blue);
     text-decoration: underline;
 }
 header a#site-lang{
@@ -189,7 +193,7 @@ body > .main-section{
     margin-right: 4px;
 }
 .main-section > .column > .text-holder a:hover{
-    color: #005b9f;
+    color: var(--blue);
 }
 
 
@@ -211,7 +215,7 @@ body > .secondery-section{
     margin: 0 4px 0 0;
 }
 .secondery-section a:hover{
-    color: #005b9f;
+    color: var(--blue);
 }
 .secondery-section > .column{
     width: 287px;
@@ -308,12 +312,24 @@ body .contact-section{
     padding: 0 0 0 4px;
     color: #5c5c5c;
     content: ">";
-  }
+}
 .contact-section .breadcrumb ul li a {
     color: #5c5c5c;
     text-decoration: none;
-  }
+}
   .contact-section .breadcrumb ul li a:hover {
-    color: #005b9f;
+    color: var(--blue);
     text-decoration: underline;
-  }  
+}
+.contact-section .column:last-of-type >div{
+    width: 292px;
+    height: 175px;
+    border: 2px solid rgba(233,233,233,0.8);
+    padding: 0 15px;
+    margin: 19px 13px 0 0;
+    border-top-right-radius: 20px;
+    background: linear-gradient(0deg, rgba(233, 233, 233, 0.8) 50%, #fff);
+}
+.contact-section .column:last-of-type h4{
+    color: var(--blue);
+}
