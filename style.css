@@ -192,3 +192,60 @@ a:hover > .a-dspr{
 a:hover >  .a-dsply{
     display: initial;
 }
+body > .secondery-section{
+    width: 900px;
+    margin: 0 auto 60px auto;
+    color: #575757;
+}
+.secondery-section .links{
+    display: block;
+}
+.secondery-section a{
+    font-size: 13px;
+    float: left;
+    color: #72716d;
+    margin-top: 12px;
+}
+.secondery-section a img{
+    margin: 0 4px 0 0;
+}
+
+.secondery-section a:hover{
+    color: #005b9f;
+}
+.secondery-section > .column{
+    width: 287px;
+    height: 216px;
+    border: 2px solid rgba(233,233,233,0.8);
+    padding: 0 15px;
+    margin: 19px 13px 0 0;
+    border-top-right-radius: 20px;
+    background: linear-gradient(0deg, rgba(233, 233, 233, 0.8) 50%, #fff);
+}
+.secondery-section h4{
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0;
+    margin: 4px 2px 8px 0;
+    line-height: 2;
+    border-bottom: 2px solid rgba(216,216,216,0.5);
+    width: 245px;
+}
+.secondery-section img{
+    margin-top:5px ;
+}
+.secondery-section > .column:last-of-type img{
+    margin-top: -5px;
+}
+.secondery-section > .column:last-of-type a{
+    float: none;
+    display: block;
+}
+
+.secondery-section .map-links{
+    display: flex;
+    justify-content: space-between;
+}
+.secondery-section .map-links >*{
+    width: auto;
+}
