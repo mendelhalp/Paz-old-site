@@ -2,7 +2,8 @@
     box-sizing: border-box;
 }
 :root{
-    --blue: #005b9f;
+--blue: #005b9f;
+--dark-grey: #6d6d6d;
 }
 body{
     margin: 0;
@@ -332,4 +333,18 @@ body .contact-section{
 }
 .contact-section .column:last-of-type h4{
     color: var(--blue);
+    margin: 4px 2px 8px 0;
+    line-height: 1.8;
+    border-bottom: 2px solid rgba(216,216,216,0.5);
+    width: 245px;
+}
+.contact-section .column:last-of-type article{
+    font-size: 13px;
+    color: var(--dark-grey);
+}
+.contact-section .column:last-of-type .bold{
+    font-weight: bold;
+}
+.contact-section div#more a{
+    color: #00e;
 }
