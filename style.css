@@ -287,10 +287,10 @@ footer > nav li > a,footer > nav li{
     /* margin-left: 1px; */
     padding: 0;
 }
-footer .red > a{
+/* footer .red > a{
     color: red;
     text-shadow:0.2px 0.2px rgb(75, 75, 75);
-}
+} */
 
 
 body .contact-section{
