@@ -133,25 +133,31 @@
                     <article>ליצירת קשר עם קשרי לקוחות אנא מלאו את הפרטים הבאים ואנו נשמח לעמוד לרשותכם :</article>
                     <article class="note">* השדות המסומנים בכוכבית (*) הינם שדות חובה</article>
                 </div>
-                <div class="form-content">
-                    <div class="row">
+                <div class="form-content clearfix">
+                    <div id="fname" class="row">
                         <label>* שם פרטי</label>
-                        <input type="text">
+                        <input type="text" required onblur="fnameBoxActive()">
+                        <div class="error">שדה חובה</div>
                     </div>
-                    <div class="row">
+                    <div id="lname" class="row">
                         <label>* שם משפחה</label>
-                        <input type="text">
+                        <input type="text" required onblur="lnameBoxActive()">
+                        <div class="error">שדה חובה</div>
                     </div>
-                    <div class="row">
+                    <div id="phone" class="row">
                         <label>* טלפון</label>
-                        <input type="text">
+                        <input type="text" required onblur="phoneBoxActive()">
+                        <div class="error">שדה חובה</div>
                     </div>
-                    <div class="row">
+                    <div id="email" class="row">
                         <label>* E-mail</label>
-                        <input type="email">
+                        <input type="email" required onblur="emailBoxActive()">
+                        <div class="error">שדה חובה</div>
                     </div>
                     <textarea name="comments" rows="7"></textarea>
-                    <button type="button">שלח</button>
+                    <div id="btn-cntnr" class="row">
+                        <button type="button">שלח</button>
+                    </div>
                 </div>
             </form>
         </div>
