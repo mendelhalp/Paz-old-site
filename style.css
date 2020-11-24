@@ -293,9 +293,11 @@ footer .red > a{
     text-shadow:0.2px 0.2px rgb(75, 75, 75);
 }
 
+
 body .contact-section{
     width: 900px;
     margin: 136px auto 0 auto;
+    flex-wrap: nowrap;
 }
 .contact-section > .column{
     margin-left: 22px;
@@ -359,14 +361,22 @@ body .contact-section{
     color: var(--blue);
     text-decoration: underline;
 }
+.contact-section .column h4{
+    color: var(--dark-grey);
+    border-bottom: solid 1px #cacaca;
+    width: 440px;
+}
 .contact-section .column:last-of-type > div{
     width: 292px;
     height: 175px;
     border: 2px solid rgba(233,233,233,0.8);
     padding: 0 15px;
-    margin: 19px 13px 0 0;
+    margin: 19px 0 0 0;
     border-top-right-radius: 20px;
     background: linear-gradient(0deg, rgba(233, 233, 233, 0.8) 50%, #fff);
+}
+.contact-section .column:last-of-type > div:first-of-type{
+    margin-top: 55px;
 }
 .contact-section .column:last-of-type h4{
     color: var(--blue);
