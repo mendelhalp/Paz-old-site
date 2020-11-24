@@ -25,3 +25,7 @@ function emailBoxActive(){
         emailError.style.display = "initial";
     }
 }
+
+function clearTextarea(){
+    document.getElementById("comments").innerHTML = "";
+}
