@@ -365,6 +365,14 @@ body .contact-section{
     color: var(--dark-grey);
     border-bottom: solid 1px #cacaca;
     width: 440px;
+    margin-block-end:13px;
+}
+.contact-section form{
+    width: 385px;
+    height: 357px;
+    border: solid 1px #cacaca;
+    border-top-right-radius: 20px;
+    background: linear-gradient(0deg, rgba(233, 233, 233, 0.8) 50%, #fff);
 }
 .contact-section .column:last-of-type > div{
     width: 292px;
