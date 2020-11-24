@@ -388,10 +388,17 @@ body .contact-section{
 .contact-section .column:last-of-type article{
     font-size: 13px;
     color: var(--dark-grey);
+    padding-right: 7px;
+    line-height: 0.99;
 }
 .contact-section .column:last-of-type .bold{
     font-weight: bold;
 }
 .contact-section div#more a{
     color: #00e;
+    text-decoration: none;
+}
+.contact-section div#more a:hover{
+    color: var(--blue);
+    text-decoration: underline;
 }
