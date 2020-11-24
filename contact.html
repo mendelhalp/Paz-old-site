@@ -151,8 +151,9 @@
                     </div>
                     <div id="email" class="row">
                         <label>* E-mail</label>
-                        <input type="email" required onblur="emailBoxActive()">
+                        <input id="email-input" type="text" required onblur="emailBoxActive()">
                         <div class="error">שדה חובה</div>
+                        <div id="email-error" class="error">קלט לא מתאים</div>
                     </div>
                     <textarea name="comments" rows="7"></textarea>
                     <div id="btn-cntnr" class="row">
