@@ -184,16 +184,18 @@ body > .main-section{
     font-size: 13px;
     line-height: 13px;
 }
-.main-section > .column > .text-holder a{
+.main-section > .column > .text-holder a.a-white{
     font-size: 13px;
     color: white;
     float: left;
+    padding-left: 11px;
+    background-image: url(images/read_more_white.png);
+    background-repeat: no-repeat;
+    background-position-y:center ;
 }
-.main-section > .column > .text-holder a img{
-    margin-right: 4px;
-}
-.main-section > .column > .text-holder a:hover{
+.main-section > .column > .text-holder a.a-white:hover{
     color: var(--blue);
+    background-image: url(images/read_more_blue.png);
 }
 
 
@@ -205,17 +207,19 @@ body > .secondery-section{
 .secondery-section .links{
     display: block;
 }
-.secondery-section a{
+.secondery-section a.a-yellow{
     font-size: 13px;
-    float: left;
     color: #72716d;
+    float: left;
     margin-top: 12px;
-}
-.secondery-section a img{
-    margin: 0 4px 0 0;
+    padding-left: 11px;
+    background-image: url(images/read_more_yellow.png);
+    background-repeat: no-repeat;
+    background-position-y:center ;
 }
 .secondery-section a:hover{
     color: var(--blue);
+    background-image: url(images/read_more_blue.png);
 }
 .secondery-section > .column{
     width: 287px;
@@ -235,7 +239,7 @@ body > .secondery-section{
     border-bottom: 2px solid rgba(216,216,216,0.5);
     width: 245px;
 }
-.secondery-section > .column > img{
+.secondery-section > .column img{
     margin-top:5px ;
 }
 .secondery-section div.my-slides{
